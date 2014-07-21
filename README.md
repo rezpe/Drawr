@@ -6,15 +6,15 @@ This library permits you to build a canvas where users can draw
 
 You use function 'createDrawr' to create a jquery object containing the canvas
 
-''' javascript
+```javascript
 $drawr = createDrawr(600,600).appendTo("body")
-'''
+```
 
 Then you can set css and attr like in normal jquery objects
 
-''' javascript
+```javascript
 $drawr.css({position:"absolute",left:0,top:0})
-'''
+```
 
 ## Events
 
@@ -26,17 +26,17 @@ There are 3 events that are triggered
 
 For example:
 
-''' javascript
+```javascript
 $drawr.bind("endpath",function(evt,x,y){
         points = $(this).data("list")
         createShape(points)
 })
-'''
+```
 
 ## Data
 
 Using the key "list", one can access the array of points of drawn path
 
-''' javascript
+```javascript
 points = $(this).data("list")
-'''
+```
